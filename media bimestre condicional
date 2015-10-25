@@ -1,0 +1,12 @@
+    n = input ("informe seu nome ")
+    b1 = float(input("informe sua nota em Biologia no 1º Bimestre "))
+    b2 = float(input("informe sua nota em Biologia no 2º Bimestre "))
+    b3 = float(input("informe sua nota em Biologia no 3º Bimestre "))
+    b4 = float(input("informe sua nota em Biologia no 4º Bimestre "))
+    media = (b1 + b2 + b3 + b4) / 4
+    if (media >= 6):
+        print (n,", sua média em Biologia é,",media,"você foi aprovado")
+    elif (media <= 5.9 and media >= 4): 
+        print (n,",sua média em Biologia é,",media,"você esta de recuperação")
+    elif(media <= 3.9): # Não funciona com else, tenho que descobrir pq ???
+        print (n,", sua média em Biologia foi",media,"Você esta reprovado")
